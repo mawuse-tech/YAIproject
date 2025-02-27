@@ -68,64 +68,47 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="w-full flex flex-col items-center justify-center text-center pt-8 pl-8 pr-8 bg-blue-100">
-                <h2 class="text-4xl font-bold text-blue-950">Powering the Future of Electrical Solutions</h2>
-
-            </div>
-            <div class="w-full flex flex-col md:flex-row items-center justify-center gap-10 p-8 bg-blue-100">
-                <div class="w-full  md:w-1/2">
-                    <img src="./images/oyi.jpg" alt="picture of the ceo"
-                        class="w-full h-full rounded-2xl object-cover shadow-lg">
-                </div>
-
-                <div class="w-full md:w-1/2 max-w-md px-6">
-                    <div class="mt-6 space-y-4">
-                        <div class="flex items-start gap-4">
-                            <i class="fas fa-user-cog text-orange-500 text-2xl"></i>
-                            <div>
-                                <h3 class="text-lg font-semibold text-blue-950">Expert Technicians</h3>
-                                <p class="text-gray-600">Skilled professionals for every task.</p>
+        <section class="bg-blue-100 py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-extrabold text-blue-950 mb-8 ">Powering the Future <br>of Electrical Solutions
+                </h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 p-8">
+                    <div class="w-full md:w-1/2">
+                        <img src="./images/oyi.jpg" alt="picture of the ceo"
+                            class="w-full h-full rounded-2xl object-cover shadow-xl transition-transform transform hover:scale-105">
+                    </div>
+                    <div class="w-full md:w-1/2 max-w-lg px-6">
+                        <div class="mt-6 space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-user-cog text-orange-500 text-3xl"></i>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-blue-950">Expert Technicians</h3>
+                                    <p class="text-gray-700">Skilled professionals for every task.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <i class="fas fa-lightbulb text-orange-500 text-2xl"></i>
-                            <div>
-                                <h3 class="text-lg font-semibold text-blue-950">Innovative Solutions</h3>
-                                <p class="text-gray-600">Cutting-edge tech for best results.</p>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-lightbulb text-orange-500 text-3xl"></i>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-blue-950">Innovative Solutions</h3>
+                                    <p class="text-gray-700">Cutting-edge tech for best results.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <i class="fas fa-dollar-sign text-orange-500 text-2xl"></i>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800">Affordable Rates</h3>
-                                <p class="text-gray-600">Top quality without breaking the bankine what electrical
-                                    services shouldine what electrical services shouldine what electricallectrical
-                                    services shouldine what electricallectrical services shouldine what
-                                    electricallectrical services shouldine what electricallectrical services shouldine
-                                    what electricallectrical services shouldine what electricallectrical services
-                                    shouldine what electricallectrical services shouldine what electrical services
-                                    services shouldine what electrical services shouldine what electricallectri.</p>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-dollar-sign text-orange-500 text-3xl"></i>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-blue-950">Affordable Rates</h3>
+                                    <p class="text-gray-700">Top quality without breaking the bank.</p>
+                                </div>
                             </div>
+                            <button id="vid-btn">watch</button>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="w-full flex flex-col md:flex-row items-center justify-center bg-blue-100 gap-10 px-8">
-                <div class="w-full md:w-1/2">
-                    <h2 class="text-3xl font-bold mb-4 text-blue-950">Discover the essence of our services through this
-                        introductory video</h2>
-
-                </div>
-                <div class="w-full md:w-1/2">
-                    <video src="./images/vid.mp4" controls class="w-full rounded-2xl"></video>
                 </div>
             </div>
         </section>
 
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-            
+
             <div class="bg-blue-950 text-white rounded-2xl overflow-hidden shadow-lg relative">
                 <div class="relative w-full h-48">
                     <img src="./images/IMG_0200.jpg" alt="Smart Grid Installation" class="w-full h-full object-cover">
@@ -134,7 +117,8 @@
                 <div class="p-6">
                     <h2 class="text-2xl font-bold mb-4">Smart Grid Installation</h2>
                     <p class="text-gray-300 mb-6">Optimizing energy distribution for efficiency and reliability.</p>
-                    <button class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">SEE
+                    <button id="service-btn1"
+                        class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">SEE
                         DETAIL</button>
                 </div>
             </div>
@@ -147,7 +131,8 @@
                 <div class="p-6">
                     <h2 class="text-2xl font-bold mb-4">Industrial Power Upgrade</h2>
                     <p class="text-gray-300 mb-6">Boosting electrical capacity for high-performance industries.</p>
-                    <button class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">SEE
+                    <button id="service-btn2"
+                        class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">SEE
                         DETAIL</button>
                 </div>
             </div>
@@ -160,13 +145,227 @@
                 <div class="p-6">
                     <h2 class="text-2xl font-bold mb-4">Home Automation Systems</h2>
                     <p class="text-gray-300 mb-6">Connecting homes to the future with seamless smart technology.</p>
-                    <button class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">SEE
+                    <button id="service-btn3"
+                        class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">SEE
                         DETAIL</button>
                 </div>
             </div>
         </section>
 
+        <!-- services details -->
+        <section>
+            <div class="fixed hidden bottom-0 left-0 right-0 bg-gray-900 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
+                id="service1">
+                <button class="absolute top-4 right-4 text-gray-200 hover:text-gray-500" id="close-service-1">X</button>
 
+                <div class="bg-gray-900 text-white py-12 px-6 ">
+                    <div class="max-w-7xl mx-auto text-center">
+                        <h2 class="text-4xl font-bold mb-8">My Interest</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- interest 1 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Team Collaboration</h3>
+                                <p class="text-gray-300">
+                                    I enjoy working with cross-functional teams, blending design and development
+                                    perspectives to deliver cohesive projects.
+                                </p>
+                            </div>
+
+                            <!-- interest 2 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Learning and Growth</h3>
+                                <p class="text-gray-300">
+                                    Continuously improving my skills by exploring tutorials, experimenting with
+                                    projects, and participating in challenges like #100DaysOfCode.
+                                </p>
+                            </div>
+
+                            <!-- interest 3 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Open Source Contribution</h3>
+                                <p class="text-gray-300">
+                                    Being part of the developer community motivates me. I enjoy collaborating on
+                                    open-source projects, learning from other developers, and contributing my skills to
+                                    meaningful initiatives.
+                                </p>
+                            </div>
+
+                            <!-- interest 4 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Human-Centered Design</h3>
+                                <p class="text-gray-300">
+                                    Exploring how technology can improve lives by focusing on user needs and creating
+                                    intuitive, problem-solving interfaces.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fixed hidden bottom-0 left-0 right-0 bg-gray-900 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
+                id="service2">
+                <button class="absolute top-4 right-4 text-gray-200 hover:text-gray-500" id="close-service-2">X</button>
+
+                <div class="bg-gray-900 text-white py-12 px-6 ">
+                    <div class="max-w-7xl mx-auto text-center">
+                        <h2 class="text-4xl font-bold mb-8">My Interest</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- interest 1 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Team Collaboration</h3>
+                                <p class="text-gray-300">
+                                    I enjoy working with cross-functional teams, blending design and development
+                                    perspectives to deliver cohesive projects.
+                                </p>
+                            </div>
+
+                            <!-- interest 2 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Learning and Growth</h3>
+                                <p class="text-gray-300">
+                                    Continuously improving my skills by exploring tutorials, experimenting with
+                                    projects, and participating in challenges like #100DaysOfCode.
+                                </p>
+                            </div>
+
+                            <!-- interest 3 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Open Source Contribution</h3>
+                                <p class="text-gray-300">
+                                    Being part of the developer community motivates me. I enjoy collaborating on
+                                    open-source projects, learning from other developers, and contributing my skills to
+                                    meaningful initiatives.
+                                </p>
+                            </div>
+
+                            <!-- interest 4 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Human-Centered Design</h3>
+                                <p class="text-gray-300">
+                                    Exploring how technology can improve lives by focusing on user needs and creating
+                                    intuitive, problem-solving interfaces.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixed hidden bottom-0 left-0 right-0 bg-gray-900 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
+                id="service3">
+                <button class="absolute top-4 right-4 text-gray-200 hover:text-gray-500" id="close-service-3">X</button>
+
+                <div class="bg-gray-900 text-white py-12 px-6 ">
+                    <div class="max-w-7xl mx-auto text-center">
+                        <h2 class="text-4xl font-bold mb-8">My Interest</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- interest 1 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Team Collaboration</h3>
+                                <p class="text-gray-300">
+                                    I enjoy working with cross-functional teams, blending design and development
+                                    perspectives to deliver cohesive projects.
+                                </p>
+                            </div>
+
+                            <!-- interest 2 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Learning and Growth</h3>
+                                <p class="text-gray-300">
+                                    Continuously improving my skills by exploring tutorials, experimenting with
+                                    projects, and participating in challenges like #100DaysOfCode.
+                                </p>
+                            </div>
+
+                            <!-- interest 3 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Open Source Contribution</h3>
+                                <p class="text-gray-300">
+                                    Being part of the developer community motivates me. I enjoy collaborating on
+                                    open-source projects, learning from other developers, and contributing my skills to
+                                    meaningful initiatives.
+                                </p>
+                            </div>
+
+                            <!-- interest 4 -->
+                            <div
+                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4">Human-Centered Design</h3>
+                                <p class="text-gray-300">
+                                    Exploring how technology can improve lives by focusing on user needs and creating
+                                    intuitive, problem-solving interfaces.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- video section -->
+        <section id="video"class="w-[100%] h-[50%] fixed hidden bottom-0 left-0 right-0 bg-gray-900 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]" >
+                <video src="./images/vid.mp4" class="w-full h-[90vh]" controls autoplay muted loop></video>   
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="bg-blue-100 py-16">
+            <div class="container mx-auto px-5 lg:px-20">
+                <h2 class="text-4xl font-extrabold text-blue-950 mb-8 text-center">Contact Me</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+                    <div class="w-full md:w-1/2">
+                        <form class="bg-white p-8 rounded-lg shadow-lg">
+                            <div class="mb-4">
+                                <label for="name" class="block text-blue-950 font-bold mb-2">Name</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-blue-950 font-bold mb-2">Email</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    placeholder="Your Email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-blue-950 font-bold mb-2">Message</label>
+                                <textarea id="message" rows="4"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition">Send
+                                Message</button>
+                        </form>
+                    </div>
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-blue-950 mb-4">Get in Touch</h3>
+                        <p class="text-gray-700 mb-4">Feel free to reach out for any inquiries or collaborations. I'm
+                            always open to discussing new projects, creative ideas, or opportunities to be part of your
+                            visions.</p>
+                        <p class="text-gray-700"><i class="fas fa-phone-alt text-orange-500"></i> +123 456 7890</p>
+                        <p class="text-gray-700"><i class="fas fa-envelope text-orange-500"></i> contact@oyibometal.com
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -199,7 +398,7 @@
         </div>
     </footer>
 
-
+    <script src="index.js"></script>
 </body>
 
 </html>
