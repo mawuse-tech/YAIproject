@@ -13,7 +13,12 @@ const closeServiceThree = document.getElementById('close-service-3')
 const videoBtn = document.getElementById('vid-btn')
 const video = document.getElementById('video')
 
-
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+});
 
 serviceBtnone.addEventListener('click', function () {
   serviceOne.style.display = 'inline'

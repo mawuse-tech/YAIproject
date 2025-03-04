@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Audiowide&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>oyibometal</title>
 </head>
 
@@ -74,11 +76,11 @@
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl font-extrabold text-blue-950 mb-8">About Me</h2>
                 <div class="flex flex-col md:flex-row items-center justify-center gap-10 p-8">
-                    <div class="w-full md:w-1/2">
+                    <div class="w-full md:w-1/2" data-aos="fade-right">
                         <img src="./images/oyi.jpg" alt="picture of the ceo"
                             class="w-full h-full rounded-2xl object-cover shadow-xl transition-transform transform hover:scale-105">
                     </div>
-                    <div class="w-full md:w-1/2 max-w-lg px-6">
+                    <div class="w-full md:w-1/2 max-w-lg px-6" data-aos="fade-left">
                         <p class="text-gray-700 mb-6">
                             This is a placeholder for the "About Me" content. You can add your personal story, professional background, or any other information you'd like to share here.professional background, or any other information you'd like to share here.professional background, or any other information you'd like to share here.
                         </p>
@@ -91,9 +93,10 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-
-            <div class="bg-blue-950 text-white rounded-2xl overflow-hidden shadow-lg relative">
+        <section>
+            <h1 class="text-4xl font-bold text-center text-blue-950 mb-8 mt-8">SERVICES</h1>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+            <div class="bg-blue-950 text-white rounded-2xl overflow-hidden shadow-lg relative" data-aos="fade-up">
                 <div class="relative w-full h-48">
                     <img src="./images/IMG_0200.jpg" alt="Smart Grid Installation" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
@@ -107,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="bg-blue-950 text-white rounded-2xl overflow-hidden shadow-lg relative">
+            <div class="bg-blue-950 text-white rounded-2xl overflow-hidden shadow-lg relative" data-aos="fade-up" data-aos-delay="100">
                 <div class="relative w-full h-48">
                     <img src="./images/IMG_0200.jpg" alt="Industrial Power Upgrade" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
@@ -121,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="bg-blue-950 text-white rounded-2xl overflow-hidden shadow-lg relative">
+            <div class="bg-blue-950 text-white rounded-2xl overflow-hidden shadow-lg relative" data-aos="fade-up" data-aos-delay="200">
                 <div class="relative w-full h-48">
                     <img src="./images/IMG_0200.jpg" alt="Home Automation Systems" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
@@ -134,10 +137,14 @@
                         DETAIL</button>
                 </div>
             </div>
+         </div>
+
+           
         </section>
 
         <!-- services details -->
         <section>
+           
             <div class="fixed hidden bottom-0 left-0 right-0 bg-blue-950 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
                 id="service1">
                 <button class="absolute top-4 right-4 text-gray-200 hover:text-gray-500" id="close-service-1">X</button>
@@ -193,20 +200,20 @@
 
             </div>
 
-            <div class="fixed hidden bottom-0 left-0 right-0 bg-gray-900 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
+            <div class="fixed hidden bottom-0 left-0 right-0 bg-blue-950 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
                 id="service2">
                 <button class="absolute top-4 right-4 text-gray-200 hover:text-gray-500" id="close-service-2">X</button>
 
-                <div class="bg-gray-900 text-white py-12 px-6 ">
+                <div class="bg-blue-950 text-white py-12 px-6 ">
                     <div class="max-w-7xl mx-auto text-center">
                         <h2 class="text-4xl font-bold mb-8">My Interest</h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                             <!-- interest 1 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Team Collaboration</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Team Collaboration</h3>
+                                <p class="text-blue-950">
                                     I enjoy working with cross-functional teams, blending design and development
                                     perspectives to deliver cohesive projects.
                                 </p>
@@ -214,9 +221,9 @@
 
                             <!-- interest 2 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Learning and Growth</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Learning and Growth</h3>
+                                <p class="text-blue-950">
                                     Continuously improving my skills by exploring tutorials, experimenting with
                                     projects, and participating in challenges like #100DaysOfCode.
                                 </p>
@@ -224,9 +231,9 @@
 
                             <!-- interest 3 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Open Source Contribution</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Open Source Contribution</h3>
+                                <p class="text-blue-950">
                                     Being part of the developer community motivates me. I enjoy collaborating on
                                     open-source projects, learning from other developers, and contributing my skills to
                                     meaningful initiatives.
@@ -235,9 +242,9 @@
 
                             <!-- interest 4 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Human-Centered Design</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Human-Centered Design</h3>
+                                <p class="text-blue-950">
                                     Exploring how technology can improve lives by focusing on user needs and creating
                                     intuitive, problem-solving interfaces.
                                 </p>
@@ -245,22 +252,23 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="fixed hidden bottom-0 left-0 right-0 bg-gray-900 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
+            <div class="fixed hidden bottom-0 left-0 right-0 bg-blue-950 shadow-lg p-6 border-t h-full z-50   overflow-auto md:h-[80%]"
                 id="service3">
                 <button class="absolute top-4 right-4 text-gray-200 hover:text-gray-500" id="close-service-3">X</button>
 
-                <div class="bg-gray-900 text-white py-12 px-6 ">
+                <div class="bg-blue-950 text-white py-12 px-6 ">
                     <div class="max-w-7xl mx-auto text-center">
                         <h2 class="text-4xl font-bold mb-8">My Interest</h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                             <!-- interest 1 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Team Collaboration</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Team Collaboration</h3>
+                                <p class="text-blue-950">
                                     I enjoy working with cross-functional teams, blending design and development
                                     perspectives to deliver cohesive projects.
                                 </p>
@@ -268,9 +276,9 @@
 
                             <!-- interest 2 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Learning and Growth</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Learning and Growth</h3>
+                                <p class="text-blue-950">
                                     Continuously improving my skills by exploring tutorials, experimenting with
                                     projects, and participating in challenges like #100DaysOfCode.
                                 </p>
@@ -278,9 +286,9 @@
 
                             <!-- interest 3 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Open Source Contribution</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Open Source Contribution</h3>
+                                <p class="text-blue-950">
                                     Being part of the developer community motivates me. I enjoy collaborating on
                                     open-source projects, learning from other developers, and contributing my skills to
                                     meaningful initiatives.
@@ -289,9 +297,9 @@
 
                             <!-- interest 4 -->
                             <div
-                                class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-                                <h3 class="text-2xl font-semibold mb-4">Human-Centered Design</h3>
-                                <p class="text-gray-300">
+                                class="bg-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+                                <h3 class="text-2xl font-semibold mb-4 text-blue-950">Human-Centered Design</h3>
+                                <p class="text-blue-950">
                                     Exploring how technology can improve lives by focusing on user needs and creating
                                     intuitive, problem-solving interfaces.
                                 </p>
