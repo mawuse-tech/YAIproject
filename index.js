@@ -12,6 +12,7 @@ const closeServiceThree = document.getElementById('close-service-3')
 
 const videoBtn = document.getElementById('vid-btn')
 const video = document.getElementById('video')
+const closeVideo = document.getElementById('close-video-1')
 
 // Initialize AOS
 AOS.init({
@@ -48,5 +49,9 @@ closeServiceThree.addEventListener("click", function () {
 
 videoBtn.addEventListener('click', function () {
   video.style.display = 'inline'
+})
+
+closeVideo.addEventListener("click", function () {
+  video.style.display = 'none';
 })
 
