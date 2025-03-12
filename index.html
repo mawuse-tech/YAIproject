@@ -104,7 +104,7 @@
                     ENGINEERING</h1>
                 <p id="hero-text" class="mt-4 text-lg lg:text-xl fade">Harnessing advanced energy technologies to
                     provide reliable, sustainable, and independent power for every community.</p>
-                <a href="#"><button class="mt-6 bg-[#DB2B0E] text-white py-3 px-6 rounded-lg hover:bg-orange-600">Contact
+                <a href="#contact"><button class="mt-6 bg-[#DB2B0E] text-white py-3 px-6 rounded-lg hover:bg-orange-600">Contact
                     Us</button></a>
             </div>
         </div>
@@ -471,41 +471,71 @@
 
                     </div>
 
-                    <!-- Contact Form -->
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="w-full md:w-2/3">
+                    <form action="https://formspree.io/f/xblgjwdk" method="POST" class="w-full md:w-2/3" id="contact-form">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="flex items-center border-b border-gray-400">
                                 <i class="fas fa-user text-blue-900 mr-2"></i>
-                                <input type="text" name="name" placeholder="Name"
-                                    class="focus:outline-none py-2 text-gray-700 w-full p-6  bg-blue-100" required>
+                                <input type="text" name="name" placeholder="Name" class="focus:outline-none py-2 text-gray-700 w-full p-6 bg-blue-100" required>
                             </div>
                             <div class="flex items-center border-b border-gray-400">
                                 <i class="fas fa-envelope text-blue-900 mr-2"></i>
-                                <input type="email" name="email" placeholder="Email Address"
-                                    class="focus:outline-none py-2 text-gray-700 w-full p-6  bg-blue-100" required>
+                                <input type="email" name="email" placeholder="Email Address" class="focus:outline-none py-2 text-gray-700 w-full p-6 bg-blue-100" required>
                             </div>
                             <div class="flex items-center border-b border-gray-400">
                                 <i class="fas fa-phone text-blue-900 mr-2"></i>
-                                <input type="text" name="phone" placeholder="Phone"
-                                    class="focus:outline-none py-2 text-gray-700 w-full p-6 bg-blue-100" required>
+                                <input type="text" name="phone" placeholder="Phone" class="focus:outline-none py-2 text-gray-700 w-full p-6 bg-blue-100" required>
                             </div>
                             <div class="flex items-center border-b border-gray-400">
                                 <i class="fas fa-info-circle text-blue-900 mr-2"></i>
-                                <input type="text" name="subject" placeholder="Subject"
-                                    class="focus:outline-none py-2 text-gray-700 w-full p-6 bg-blue-100" required>
+                                <input type="text" name="subject" placeholder="Subject" class="focus:outline-none py-2 text-gray-700 w-full p-6 bg-blue-100" required>
                             </div>
                         </div>
                         <div class="flex items-center border-b border-gray-400 mt-6">
                             <i class="fas fa-comment-alt text-blue-900 mr-2"></i>
-                            <textarea name="message" placeholder="How can we help you? Feel free to get in touch!"
-                                class="focus:outline-none py-2 text-gray-700 w-full p-6  bg-blue-100"
-                                required></textarea>
+                            <textarea name="message" placeholder="How can we help you? Feel free to get in touch!" class="focus:outline-none py-2 text-gray-700 w-full p-6 bg-blue-100" required></textarea>
                         </div>
-                        <button type="submit"
-                            class="bg-red-600 text-white py-3 px-6 rounded-lg hover:bg-orange-600 mt-6">
+                        <button type="submit" class="bg-red-600 text-white py-3 px-6 rounded-lg hover:bg-orange-600 mt-6" id="submit-button">
                             <i class="fas fa-paper-plane mr-2"></i> Get in Touch
                         </button>
                     </form>
+                    
+                    <p id="sending-message" class="hidden text-blue-950 mt-4">Sending your message...</p>
+                    <p id="success-message" class="hidden text-green-500 mt-4">Thank you! Your message has been sent successfully.</p>
+                    
+                    <script>
+                        const form = document.getElementById('contact-form');
+                        const successMessage = document.getElementById('success-message');
+                        const sendingMessage = document.getElementById('sending-message');
+                        const submitButton = document.getElementById('submit-button');
+                    
+                        form.addEventListener('submit', async (e) => {
+                            e.preventDefault();
+                    
+                            sendingMessage.classList.remove('hidden');
+                            submitButton.disabled = true;
+                    
+                            const formData = new FormData(form);
+                            const response = await fetch(form.action, {
+                                method: form.method,
+                                body: formData,
+                                headers: {
+                                    Accept: 'application/json',
+                                },
+                            });
+                    
+                            sendingMessage.classList.add('hidden');
+                            submitButton.disabled = false;
+                    
+                            if (response.ok) {
+                                form.reset();
+                                successMessage.classList.remove('hidden');
+                            } else {
+                                alert('Oops! Something went wrong. Please try again.');
+                            }
+                        });
+                    </script>
+                    
+                    
                 </div>
             </div>
         </section>
@@ -520,9 +550,9 @@
             <div>
                 <h3 class="text-xl font-bold text-gray-500">Quick Links</h3>
                 <ul class="mt-4 space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-orange-500">Home</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-orange-500">Services</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-orange-500">Contact</a></li>
+                    <li><a href="#hero" class="text-gray-400 hover:text-orange-500">Home</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-orange-500">Services</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-orange-500">Contact</a></li>
                 </ul>
             </div>
             <div>
